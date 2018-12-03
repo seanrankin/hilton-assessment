@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #001e3a url('../images/background.png') no-repeat center center;
+  background-size: cover;
+  font-size: 62.5%;
+}
+
+/* Increase the base font size for iPhone+ sizes, just to demo a media query... */
+@media only screen and (min-width: 413px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 43px;
+  background-color: #1c1c1c;
+  color: white;
+  border-bottom: 1px #474747 solid;
+  text-align: center;
+  padding: 0 14px 0 8px;
+}
+
+.button {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border: 1px solid #2f2f2f;
+  background: -webkit-linear-gradient(top, #2c2c2c, #050505);
+  padding: 7px 9px 6px 9px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  font-size: 1.2em;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.62em;
+  font-weight: bold;
+}
+
+.logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-left: 28px;
+}
+
+main {
+  padding: 20px; /* Mockup padding is 21px, 22px *, 19px but assume they wanted 20px */
+}
+
+.hotelExterior {
+  width: 97%;
+  border: 3px solid white;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.75);
+}
+
+.info {
+  line-height: 2.1em;
+}
+
+.name {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.address {
+  font-size: 1.44em;
+  color: #a2bed8;
+}
+
+.phone {
+  font-size: 1.42em;
+}
+
+.phone a {
+  color: white;
+}
+
+.menu {
+  margin-top: 18px;
+  padding: 0;
+}
+
+.menu li:first-child {
+  border-radius: 7px 7px 0 0;
+}
+
+.menu li:last-child {
+  border-radius: 0 0 7px 7px;
+}
+
+.menu li {
+  list-style: none;
+  padding: 14px 15px 11px 16px;
+  background: -webkit-linear-gradient(top, #e8ebee, #c1cedb);
+  color: #001325;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid white;
+}
+
+.menu li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.menu li .arrow {
+  display: inline-block;
+  float: right;
+  width: 10px;
+  font-size: 1.42em;
+  line-height: 0.4em;
+  color: #434343;
+}
